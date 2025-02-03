@@ -20,3 +20,7 @@ git commit
 git commit
 git merge release
 ```
+
+## Rulesets
+
+![image](https://github.com/user-attachments/assets/55d10ac9-a0a5-41cc-aafe-138d62db863e)
