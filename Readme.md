@@ -115,4 +115,11 @@ You should navigate to your forked repository, and press the New pull request bu
 * Rulesets help you to control how people can interact with branches and tags in a repository.
 
 ![image](https://github.com/user-attachments/assets/55d10ac9-a0a5-41cc-aafe-138d62db863e)
+
+## Merging PR
+
+![image](https://github.com/user-attachments/assets/063b740b-a82c-408a-af83-445dbb036407)
+
+![image](https://github.com/user-attachments/assets/244bd45a-6a35-475c-a0d0-f8515a1533f9)
+
 -->
