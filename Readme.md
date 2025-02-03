@@ -42,7 +42,73 @@ git merge release     # Merge the `release` branch to the `master`
 
 ![git-flows](git-flow.png)
 
-## Rulesets
+
+## Pull Requests (PR)
+
+> Pull requests (PRs) are the primary method developers use to submit their changes to open source projects. When a developer opens a PR, it signals to the project maintainers that new code is ready for review. The maintainers carefully evaluate the PR, ensuring that the changes contribute value to the project without introducing any issues or breaking existing functionality.
+
+> If the PR meets these criteria, it is merged into the main codebase, becoming part of the official project.
+
+### Once you have everything set up and have chosen the project you want to contribute to, follow these steps to make your first PR
+
+#### 1. Create a copy of the repository
+
+* To start working on an open-source project, you first need to create your own copy of the repository. 
+
+* This process involves forking the repository to create a copy under your GitHub account and then cloning it to your local machine, giving you a working version of the project that you can modify and experiment with.
+
+* Forking
+When you’re on the main page for the repository, a Fork button will be displayed on your upper right-hand side of the page
+
+* You can copy the URL by using the green "Code" button from your repository page that you forked from the original repository page. Once you click the button, you’ll be able to copy the URL by clicking the clipboard button next to the URL.
+* Open your terminal. navigate to the folder you want to clone the project to and clone it using this Git command
+```bash
+git clone https://github.com/harsh-panchal-inventyv/Git-Training-Aman-Sir.git
+cd Git-Training-Aman-Sir
+```
+
+#### 2. Create new branch and start modifications
+
+* Before you begin working on the code and making changes, it's important to create a new branch. 
+* This branch will serve as a separate workspace for your code modifications, keeping them isolated from the main codebase.
+* To create a new branch and switch to it, open your terminal and enter the following command:
+```bash
+git checkout -b develop
+```
+
+* You can now make changes and save them.
+
+#### 3. Save local changes and commit
+
+* After working on your changes, you'll need to save them locally by doing:
+
+```
+git add -A
+git commit -m "Changes has been made" # commit your changes
+```
+
+#### 4. specify a new remote upstream repository for us to sync with the fork. This will be the original repository that we forked from.
+
+```bash
+git remote add origin https://github.com/harsh-panchal-inventyv/Git-Training-Aman-Sir/
+```
+
+We can verify that our remote pointer to the upstream repository was properly added by using the git remote -v command again from the repository directory.
+
+#### 5. Switch to the local main branch of our repository:
+
+```bash
+git checkout main
+git merge upstream/main # merge changes
+```
+
+Your fork’s main branch is now in sync with the upstream repository, and any local changes you made were not lost.
+
+#### 6. Create a PR
+At this point, you are ready to make a pull request to the original repository.
+You should navigate to your forked repository, and press the New pull request button on your left-hand side of the page.
+
+<!-- ## Rulesets
 
 > A ruleset is a named list of rules that applies to a repository.
 
@@ -55,3 +121,5 @@ git merge release     # Merge the `release` branch to the `master`
 ![image](https://github.com/user-attachments/assets/063b740b-a82c-408a-af83-445dbb036407)
 
 ![image](https://github.com/user-attachments/assets/244bd45a-6a35-475c-a0d0-f8515a1533f9)
+
+-->
